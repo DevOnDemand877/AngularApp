@@ -1,0 +1,37 @@
+<html>
+	<head>
+	   <title>Angular JS Views</title>
+	   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+		 
+		 
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>  
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">  
+		<script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>  
+		
+		<!---Add Fonts and Icons --->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		
+	</head>
+	<body>
+		<div class="container">
+		   <h2><a href="#">AngularJS</a></h2>
+		   <div ng-app="mainApp">
+			<div class="row col-md-6">
+				<a href="#addStudent" class="btn btn-warning">Add Student</a>
+				<a href="#viewStudents" class="btn btn-success">Students List</a>
+			</div>
+			<div class="row col-md-6">
+			</div>
+			  <div ng-view></div>
+		   </div>
+		</div>
+	   <script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
