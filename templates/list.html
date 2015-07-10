@@ -1,0 +1,44 @@
+
+<h3>Students Listing</h3>
+<div class="row">
+	<div class="col-xs-6 pull-right">
+		 <input type="text" placeholder="Search" ng-model="userSearch"class="form-control pull-right col-xs-3">
+	</div>
+</div>
+<div class="row"> 
+	<table class="table table-hover table-border table-striped table-bordered table-condensed">
+	<thead>
+		<tr>
+			<th>Student ID</th>
+			<th>Title</th>
+			<th>Description</th>
+			<th>Cat title</th>
+			<th>Created</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="student in students  | filter:userSearch">
+			<td>{{$index + 1}}</td>
+			<td>{{student.title}}</td>
+			<td width="">{{student.description}}</td>
+			<td>{{student.catTitle}}</td>
+			<td>{{student.created}}</td>
+			<td width="12%">
+				<a href="#editStudent/{{student.ID}}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Edit</a>&nbsp;
+				<a href="" class="btn btn-danger btn-xs"><i class="fa fa-remove"></i> Delete</a>
+			</td>
+		</tr>
+	</tfooter>
+		<thead>
+		<tr>
+			<th>Student ID</th>
+			<th>Title</th>
+			<th>Description</th>
+			<th>Cat title</th>
+			<th>Created</th>
+			<th>Actions</th>
+		</tr>
+	</tfooter>
+</table>
+</div>
